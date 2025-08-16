@@ -1,0 +1,40 @@
+{
+  "version": "2025.1",
+  "created": "2025-08-15",
+  "updated": "2025-08-15",
+  "region": {
+    "name": "Denver, NC",
+    "country": "US",
+    "state": "North Carolina",
+    "primary_counties": ["Lincoln", "Catawba"],
+    "coordinates": {
+      "lat": 35.5318,
+      "lon": -81.0234
+    }
+  },
+  "radio": {
+    "manufacturer": "Baofeng",
+    "model": "UV-5R",
+    "firmware_compatibility": ["all"]
+  },
+  "channels": {
+    "total": 72,
+    "ham_repeaters": "1-9",
+    "ham_simplex": "20-23",
+    "public_safety": "30-82",
+    "weather": "70-73",
+    "personal": "90-91",
+    "legacy": "100-104"
+  },
+  "safety": {
+    "duplex_protection": true,
+    "listen_only_marked": true,
+    "license_warnings": true
+  },
+  "coverage": {
+    "primary": ["Denver", "Lincolnton", "Newton"],
+    "extended": ["Catawba", "Stanley", "Iron Station"]
+  },
+  "maintainer": "SkySignals",
+  "license": "MIT"
+}

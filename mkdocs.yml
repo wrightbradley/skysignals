@@ -1,0 +1,132 @@
+---
+# Navigation
+nav:
+  - Home: index.md
+  - Radio Configurations:
+      - Overview: radio-configs/index.md
+      - Baofeng UV-5R:
+          - Getting Started: radio-configs/baofeng-uv5r/index.md
+          - Regions:
+              - US Northeast:
+                  - Boston MA: radio-configs/baofeng-uv5r/boston-ma.md
+              - US Southeast:
+                  - Charlotte NC: radio-configs/baofeng-uv5r/charlotte-nc.md
+                  - Denver NC: radio-configs/baofeng-uv5r/denver-nc.md
+                  - Asheville NC: radio-configs/baofeng-uv5r/asheville-nc.md
+                  - Waxhaw NC: radio-configs/baofeng-uv5r/waxhaw-nc.md
+          - Programming Guide: radio-configs/baofeng-uv5r/programming.md
+          - Troubleshooting: radio-configs/baofeng-uv5r/troubleshooting.md
+          - FM Broadcast: radio-configs/baofeng-uv5r/fm-broadcast.md
+  - Legal & Safety:
+      - Legal, Licensing, and Regulatory Information: legal/index.md
+  - Reference:
+      - Channel Organization: reference/channel-organization.md
+      - Service Abbreviations: reference/service-abbreviations.md
+      - Frequency Resources: reference/frequency-resources.md
+
+# Site
+site_name: SkySignals
+site_description: Radio, SDR, Signal Intelligence & Spectrum Analysis Documentation
+repo_name: wrightbradley/skysignals
+repo_url: https://github.com/wrightbradley/skysignals
+edit_uri: /blob/main/docs/
+
+# Configuration
+theme:
+  name: material
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.prune
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  font:
+    text: Roboto
+    code: Roboto Mono
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue grey
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+# Plugins
+plugins:
+  - techdocs-core
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+
+# Additional configuration
+extra:
+  status:
+    new: Recently added
+    deprecated: Deprecated
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/wrightbradley/skysignals
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: wrightbradley
+      repo: skysignals
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
